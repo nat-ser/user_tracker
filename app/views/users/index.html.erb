@@ -1,0 +1,9 @@
+<% flash.each do |key, value| %>
+	<div class="<%= flash_class(key) %>">
+	    <%= value %>
+	</div>
+<% end %>
+
+<%= render "nav" %>
+<%= render "user_table" %>
+<%= render "sign_in_chart" %>

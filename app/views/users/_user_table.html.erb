@@ -1,0 +1,26 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+  	<h2>Gamers</h2>
+  </div>
+
+  <table class="table">
+  	<thead>
+  		<tr>
+  			<th> Id </th>
+  			<th> Email </th>
+  			<th> Name </th>
+  			<th> Favorite game </th>
+  			<th> Action </th>
+  		</tr>
+  	<thead>
+    <% @users.each do |user| %>
+    	<tr>
+    		<td scope="row"> <%= user.id %> <td>
+    		<td> <%= user.email %> </td>
+    		<td> <%= user.name %> </td>
+    		<td> <%= user.fave_game %> </td>
+    		<td> <%= link_to "Edit", edit_user_path(user) %> </td>
+    	</tr>
+    <% end %>
+  </table>
+</div>

@@ -1,24 +1,22 @@
-# README
+# User tracker
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- devise for authentication
+- custom password validation
+- chartkick for the column chart
+- tests with rspec, selenium, and capybara
+- bootstrap
 
-Things you may want to cover:
+#### To Run
 
-* Ruby version
+1) cd into project folder and run `bundle`
+2) `rake db:migrate`
+3) `rake db:seed`
 
-* System dependencies
+#### To Test
 
-* Configuration
+1) Run `rspec`
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+##### Areas for improvement
+- Add pagination to the table of users on the home page
+- Separate error messages for the password validations for min_length, capital letter, and non-letter requirements
+- Finish tests
